@@ -8,4 +8,3 @@ My personal  website.
 
 
 * Notes: This site is hosted on a non-root github pages repo.  YET IT HAS HTTPS?!! How you may ask?  The glory of cloudflare: [https://blog.keanulee.com/2014/10/11/setting-up-ssl-on-github-pages.html](https://blog.keanulee.com/2014/10/11/setting-up-ssl-on-github-pages.html)
-* Go forth with the glorious wisdom I have imparted upon you.
