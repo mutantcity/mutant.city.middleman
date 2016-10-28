@@ -114,9 +114,10 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
 
   I feel simultaneously that it's not optimal the code that JS forces you to write. Compared to other languages like Ruby, Go, or Python, Javascript, with their elegant syntax, JS is just much less readable, more bloated, and has a lot of unnecessary quirks.
 
+  Even Brendan Eich the creator of Javascript has apologized for it and said he created it in 10 days.
+
   I think the only singular reason people voluntarily choose javascript over other languages is because of its browser monopoly. You have no choices browser side.
 
-  Even Brendan Eich the creator of Javascript has apologized for it and is working
 
 
 
