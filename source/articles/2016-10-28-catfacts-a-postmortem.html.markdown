@@ -8,7 +8,7 @@ author: Nick
 ---
 
 ## Intro
-So this is a brief cat facts postmortem. There's a bunch to talk about from a technical perspective but I'm just going to focus on the nuggets.
+So this is a brief cat facts postmortem. There's a bunch to talk about from a technical perspective but I'm going to hit a few points.
 I had never used NodeJs before, and the extent of my js programming was browser side DOM manipulation and Ajax.  I had a few months of using Angular, but still, that's a different beast than server side authentication, ORM data integrity stuff, and other server side operations that a backend language deals with.
 
 My feelings are still mixed on the subject of NodeJs due to how difficult it is, from my perspective, to write clean, readable, maintainable, and robust javascript due to its lexical scoping, asynchronous single threaded nature, and lack of OOP.
