@@ -17,4 +17,4 @@ Additionally I hope  to  post issues I've run across and  how I dealt with them 
 
 Lets move into the future together: technologically, intellectually, emotionally, intimately, but most of all hungrily.
 
-(Note: Reduce the size of that high resolution taco image. The tacos don't load rapidly on mobile.)
+(Note: Reduce the size of that high resolution taco image. The tacos don't load quickly on mobile.)
