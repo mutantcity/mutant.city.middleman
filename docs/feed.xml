@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/"/>
     <id>http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/</id>
     <published>2016-10-28T11:27:00-07:00</published>
-    <updated>2016-10-28T17:35:48-07:00</updated>
+    <updated>2016-10-28T18:46:17-07:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -45,7 +45,7 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
 
     &lt;p&gt;And to find a person and change it's name:&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  dude = Person.find("Dude")
+    &lt;pre&gt;&lt;code&gt;  dude = Person.find_by(first_name: 'Dude')
   dude.first_name = "otherdude"
   dude.save
 &lt;/code&gt;&lt;/pre&gt;

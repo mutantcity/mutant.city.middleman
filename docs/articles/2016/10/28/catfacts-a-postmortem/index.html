@@ -136,7 +136,7 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
 
     <p>And to find a person and change it's name:</p>
 
-    <pre><code>  dude = Person.find("Dude")
+    <pre><code>  dude = Person.find_by(first_name: 'Dude')
   dude.first_name = "otherdude"
   dude.save
 </code></pre>

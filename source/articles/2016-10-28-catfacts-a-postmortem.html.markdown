@@ -37,7 +37,7 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
   And to find a person and change it's name:
 
   ~~~~
-    dude = Person.find("Dude")
+    dude = Person.find_by(first_name: 'Dude')
     dude.first_name = "otherdude"
     dude.save
   ~~~~
