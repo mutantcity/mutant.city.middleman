@@ -17,4 +17,4 @@ My next post will be a rundown on the tech behind this seemingly simple blog and
 
 Lets move into the future together: technologically, intellectually, emotionally, intimately, but most of all hungrily.
 
-(To do: Reduce the size of that high resolution taco image.)
+(To do: Reduce the size of that high resolution taco image. The tacos don't load rapidly on mobile.)
