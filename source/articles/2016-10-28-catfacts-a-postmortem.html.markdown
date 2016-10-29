@@ -67,7 +67,7 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
   [Stack Overflow 2](http://stackoverflow.com/questions/33451053/req-locals-vs-res-locals-vs-res-data-vs-req-data-vs-app-locals-in-express-mi?noredirect=1&lq=1)
 
 * ### EJS
-  This is basically a slightly <s>shittier</s> more streamlined ERB. I had to install another package called EJS-layouts to be able to use layouts and there was no built in syntax for conditionals or loops, so using raw JS gets bloated pretty fast. For [example](https://github.com/nick-catfacts/catfact-express/blob/master/views/dashboard/_output_recipients.ejs#L5).
+  This is basically a slightly <s>shittier</s> more streamlined ERB. I had to install another package called EJS-layouts to be able to use layouts and there was no built in syntax for conditionals or loops, so using raw JS gets bloated pretty fast. For [example](https://github.com/nick-catfacts/catfact-express/blob/master/views/dashboard/payment/_output_payment_info.ejs#L4).
 
   There were a ton of other templating options which I'll look into one day, I just didn't want to get too involved with the templating engines.  Jade looked really neat. Super simple, elegant, html codez.  Basically what the Emmett plugin does for you except with an complimentary extra compilation step and Jade is possibly maybe more readable than HTML depending on who you ask?...
 

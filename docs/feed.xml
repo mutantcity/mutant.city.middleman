@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/"/>
     <id>http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/</id>
     <published>2016-10-28T11:27:00-07:00</published>
-    <updated>2016-10-28T17:22:43-07:00</updated>
+    <updated>2016-10-28T17:25:41-07:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -75,7 +75,7 @@ Do I assign that variable/data to request or response objects? I technically can
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h3 id="ejs"&gt;EJS&lt;/h3&gt;
-    &lt;p&gt;This is basically a slightly &lt;s&gt;shittier&lt;/s&gt; more streamlined ERB. I had to install another package called EJS-layouts to be able to use layouts and there was no built in syntax for conditionals or loops, so using raw JS gets bloated pretty fast. For &lt;a href="https://github.com/nick-catfacts/catfact-express/blob/master/views/dashboard/_output_recipients.ejs#L5"&gt;example&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;This is basically a slightly &lt;s&gt;shittier&lt;/s&gt; more streamlined ERB. I had to install another package called EJS-layouts to be able to use layouts and there was no built in syntax for conditionals or loops, so using raw JS gets bloated pretty fast. For &lt;a href="https://github.com/nick-catfacts/catfact-express/blob/master/views/dashboard/payment/_output_payment_info.ejs#L4"&gt;example&lt;/a&gt;.&lt;/p&gt;
 
     &lt;p&gt;There were a ton of other templating options which I'll look into one day, I just didn't want to get too involved with the templating engines.  Jade looked really neat. Super simple, elegant, html codez.  Basically what the Emmett plugin does for you except with an complimentary extra compilation step and Jade is possibly maybe more readable than HTML depending on who you ask?…&lt;/p&gt;
   &lt;/li&gt;
