@@ -13,7 +13,7 @@ I had never used NodeJs before, and the extent of my js programming was browser 
 
 My feelings are still mixed on the subject of NodeJs due to how difficult it is, from my perspective, to write clean, readable, maintainable, and robust javascript due to its lexical scoping, asynchronous single threaded nature, and lack of OOP.
 
-Disclaimer: I am not a Node guru, I have worked with Java, Ruby, Python, and PHP, and am just noticing the differences that all of these seem to have from JS. Additionally, I'm sure a guru can write amazing robust maintainable JS in no time, however, a guru of assembly could accomplish the same thing.  I'm just trying to discuss it from the perspective of an regular developer.
+Disclaimer: I am not a Node guru, I have worked with Java, Ruby, Python, and PHP, and am just noticing the differences that all of these seem to have from JS. Additionally, I'm sure a guru can write amazing robust maintainable JS in no time, however, a guru of assembly could accomplish the same thing.  I'm just trying to discuss it from the perspective of average developers with deadlines.
 
 ## Catfacts Architecture
 I divided my app into a typical MVC pattern with a cron job running the actual sending of the catfacts based on a user set time interval.
