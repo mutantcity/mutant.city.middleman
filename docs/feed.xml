@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/"/>
     <id>http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/</id>
     <published>2016-10-28T11:27:00-07:00</published>
-    <updated>2016-10-28T17:02:49-07:00</updated>
+    <updated>2016-10-28T17:22:43-07:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -119,11 +119,13 @@ Development can be fast…. You can do anything with her but you might painfully
 
     &lt;p&gt;I guess the conclusion here is that Javascript is a mixture of pain and pleasure. I really enjoyed that I was able to build this app and I can translate those skills to both front end  and backend. That I'm able to pick up Three.js, or Babylon.js, or Websockets easily and can start developing browser games, better UI's, or backend CRUD.&lt;/p&gt;
 
-    &lt;p&gt;I feel simultaneously that it's not optimal the code that JS forces you to write. Compared to other languages like Ruby, Go, or Python, Javascript, with their elegant syntax, JS is just much less readable, more bloated, and has a lot of unnecessary quirks.&lt;/p&gt;
-
-    &lt;p&gt;Even Brendan Eich the creator of Javascript has apologized for it and said he created it in 10 days.&lt;/p&gt;
+    &lt;p&gt;I feel simultaneously that it's not optimal the code that JS forces you to write. Compared to other languages like Ruby, Go, or Python, Javascript, with their elegant syntax, JS offers no better features and is much less readable, more bloated, and has a lot of unnecessary quirks.&lt;/p&gt;
 
     &lt;p&gt;I think the only singular reason people voluntarily choose javascript over other languages is because of its browser monopoly. You have no choices browser side.&lt;/p&gt;
+
+    &lt;p&gt;Even Brendan Eich the creator of Javascript has apologized for it and said he created it in 10 days. In his defense: who knew?  He is also working on Web Assembly to replace it.&lt;/p&gt;
+
+    &lt;p&gt;With web assembly in the pipeline to allow a binary compilation target and near native OS speeds, I think this will transcend the browser to something beyond JUST web apps and web sites. What that is remains to  be seen…but as they say: "I for one, can't wait."&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
