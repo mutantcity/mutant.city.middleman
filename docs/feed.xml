@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/"/>
     <id>http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/</id>
     <published>2016-10-28T11:27:00-07:00</published>
-    <updated>2016-10-28T19:12:48-07:00</updated>
+    <updated>2016-10-28T19:20:07-07:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -104,23 +104,23 @@ Do I assign that variable/data to request or response objects? I technically can
     &lt;h3 id="summary"&gt;Summary&lt;/h3&gt;
     &lt;p&gt;I think I'm spoiled from using Ruby and Rails as a web language. It's like that girl you date who's basically got it all figured out, she's got a good career, a nice house, a good family, she cooks healthy food and does yoga…buuuut you have to watch yourself around her. No overt alcholism, no nose picking. She gives you structure.&lt;/p&gt;
 
-    &lt;p&gt;Javascript(and it's ecosystem) are different. The JS world is that girl the girl in the leather jacket rooting for you to drink a shot at some bar ya'll stopped at on your roadtrip to Mexico. She scratches her crotch with a fork.
-She has ALOT of quirks and is very dirty if you're not careful, but moves fast, there's not much you can't do with her, and she is down for going anywhere.&lt;/p&gt;
+    &lt;p&gt;Javascript(and it's ecosystem) are different. The JS world is that girl the girl in the leather jacket rooting for you to drink a shot at a badass bar ya'll stopped at on your roadtrip to Mexico.
+She has ALOT of quirks and can get very dirty if you're not careful, but moves fast, can do really cool things, and is down for going anywhere.&lt;/p&gt;
 
-    &lt;p&gt;She can handle a database AND a three dimensional graphics library in the browser. She can do it Backend, Frontend, and, Mobile….
+    &lt;p&gt;She can handle a database AND a three dimensional graphics library in the browser. She can do Backend, Frontend, and, Mobile….
 She can handle heavy amount of users.
-Development can be fast…. You can do anything with her but you might painfully look back and regret what you did.&lt;/p&gt;
+Development can be fast…. You can do almost anything with her, but you have to be careful or you could get hurt.&lt;/p&gt;
 
-    &lt;p&gt;Also, at times she will start freaking out over the most trivial reasons…she will make things way more complicated than they have to be..and you will often question your sanity for dating her.&lt;/p&gt;
+    &lt;p&gt;Also, at times she will throw things at you for the most trivial reasons…she will make things more complicated than they have to be..and you will often question your sanity for dating her.&lt;/p&gt;
 
-    &lt;p&gt;She can offer you alot…but you just have to deal with those rough edges…&lt;/p&gt;
+    &lt;p&gt;She can offer you alot… if you just deal with a few rough edges…&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h3 id="outro"&gt;Outro&lt;/h3&gt;
 
     &lt;p&gt;I guess the conclusion here is that Javascript is a mixture of pain and pleasure. I really enjoyed that I was able to build this app and I can translate those skills to both front end  and backend. That I'm able to pick up Three.js, or Babylon.js, or Websockets easily and can start developing browser games, better UI's, or backend CRUD.&lt;/p&gt;
 
-    &lt;p&gt;I feel simultaneously that it's not optimal the code that JS forces you to write. Compared to other languages like Ruby, Go, or Python, Javascript, with their elegant syntax, JS offers no better features and is much less readable, more bloated, and has a lot of unnecessary quirks.&lt;/p&gt;
+    &lt;p&gt;I feel simultaneously that it's not optimal the code that JS forces you to write. Compared to other languages like Ruby, Go, or Python, Javascript, with their elegant syntax, JS doesn't offer better features and is less readable, more bloated, and has a lot of unnecessary quirks.&lt;/p&gt;
 
     &lt;p&gt;I think the only singular reason people voluntarily choose javascript over other languages is because of its browser monopoly. You have no choices browser side.&lt;/p&gt;
 
