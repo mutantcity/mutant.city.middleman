@@ -14,12 +14,12 @@
     <link rel="alternate" href="http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/"/>
     <id>http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/</id>
     <published>2016-10-28T11:27:00-07:00</published>
-    <updated>2016-10-28T18:53:25-07:00</updated>
+    <updated>2016-10-28T19:09:05-07:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
-&lt;p&gt;So this is a brief cat facts postmortem. There's a bunch to talk about from a technical perspective but I'll keep it sorta short.
+&lt;p&gt;So this is a brief cat facts postmortem. There's a bunch I would love to talk about from a technical perspective but I'll keep it sorta short.
 I had never used NodeJs before, and the extent of my js programming was browser side DOM manipulation and Ajax.  I had a few months of using Angular, but still, that's a different beast than server side authentication, ORM data integrity stuff, and other server side operations that a backend language deals with.&lt;/p&gt;
 
 &lt;p&gt;My feelings are still mixed on the subject of NodeJs due to how difficult it is, from my perspective, to write clean, readable, maintainable, and robust javascript due to its lexical scoping, asynchronous single threaded nature, and lack of OOP.&lt;/p&gt;
