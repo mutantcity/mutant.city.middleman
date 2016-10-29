@@ -106,7 +106,7 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
 
   Also, at times she will throw things at you for the most trivial reasons...she will make things more complicated than they have to be..and you will often question your sanity for dating her.
 
-  She can offer you alot... if you just deal with a few rough edges...
+  She can offer you alot... you just have to deal with a few rough edges...
 
 
 * ### Outro
