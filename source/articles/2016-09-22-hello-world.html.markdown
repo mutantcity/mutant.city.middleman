@@ -12,7 +12,7 @@ This is the first post of my new tech blag.   I wanted to put up this site to st
 
 Additionally I hope  to  post issues I've run across and  how I dealt with them or solutions I discovered to hopefully save future viewers headaches.
 
-My next post will be a rundown on the tech behind this seemingly simple blog and some of the issues I ran across.  (Static site generator plus riotjs web components).
+<s>My next post</s> In a future post will be a rundown on the tech behind this seemingly simple blog and some of the issues I ran across.  (Static site generator plus riotjs web components).
 
 
 Lets move into the future together: technologically, intellectually, emotionally, intimately, but most of all hungrily.
