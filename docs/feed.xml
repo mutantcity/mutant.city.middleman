@@ -136,7 +136,7 @@ Development can be fast…. You can do anything with her but you might painfully
     <link rel="alternate" href="http://blog.url.com/articles/2016/09/22/hello-world/"/>
     <id>http://blog.url.com/articles/2016/09/22/hello-world/</id>
     <published>2016-09-21T17:00:00-07:00</published>
-    <updated>2016-10-28T17:36:00-07:00</updated>
+    <updated>2016-10-28T17:45:50-07:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -144,12 +144,11 @@ Development can be fast…. You can do anything with her but you might painfully
 
 &lt;p&gt;Additionally I hope  to  post issues I've run across and  how I dealt with them or solutions I discovered to hopefully save future viewers headaches.&lt;/p&gt;
 
-&lt;s style="display: inline"&gt;My next post&lt;/s&gt;
-&lt;p&gt;In a future post will be a rundown on the tech behind this seemingly simple blog and some of the issues I ran across.  (Static site generator plus riotjs web components).&lt;/p&gt;
+&lt;p&gt; &lt;s&gt;My next post&lt;/s&gt; In a future post will be a rundown on the tech behind this seemingly simple blog and some of the issues I ran across.  (Static site generator plus riotjs web components).&lt;/p&gt;
 
 &lt;p&gt;Lets move into the future together: technologically, intellectually, emotionally, intimately, but most of all hungrily.&lt;/p&gt;
 
-&lt;p&gt;(To do: Reduce the size of that high resolution taco image. The tacos don't load rapidly on mobile.)&lt;/p&gt;
+&lt;p&gt;(Note: Reduce the size of that high resolution taco image. The tacos don't load rapidly on mobile.)&lt;/p&gt;
 </content>
   </entry>
 </feed>
