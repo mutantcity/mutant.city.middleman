@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mutant.city - Catfacts, A postmortem</title>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        html,body{height: 100%;}
+        body{border:0px solid black;}
+    </style>
+
+  </head>
+  <body>
+
+    <noscript>
+        <style type="text/css">
+            #main {display:none;}
+        </style>
+        <div class="noscriptmsg">
+        You don't have javascript enabled. You should probably enable it.
+        </div>
+        <img src="assets/img/samuel_catson.jpg"/>
+    </noscript>
+
+    <div id="main" role="main" style="border:solid 0px brown">
+      
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>        
+
+
+       <div style="overflow:hidden; white-space: nowrap;">
+            <a class="navbar-brand" href="/">
+              <delayed-class delay="1500" addclass="glyphicon glyphicon-tree-deciduous"></delayed-class>
+              <baffle-tag 
+                text="Catfacts, A postmortem">
+              </baffle-tag>
+            </a>
+        </div>
+      </div>
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog">
+            <span class="glyphicon glyphicon-filter"></span>
+            <span>Blog</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/aboot">
+            <span class="glyphicon glyphicon-user"></span>
+            <span>Aboot</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/portfolio">
+              <span class="glyphicon glyphicon-fire"></span>
+            <span>Portfolio</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/links">
+            <span class="glyphicon glyphicon-star"></span>
+            <span>Favs</span>
+          </a>
+        </li>
+      </ul>
+
+    </div><!--/.navbar-collapse-->
+  </div><!--/.container-fluid-->
+</nav>
+
+
+
+<div class="container-fluid">
+
+	<div class="row">
+		<div class="col-md-12">
+			<h2>  Catfacts, A postmortem </h2>
+			<h4>  2016-10-28 18:27 UTC | by Nick | </h4>
+			<h4>  Tags: tech </h4>
+		</div>
+	</div>
+
+
+	<div class="row">
+  		<div class="col-md-2">
+			<img src="/assets/img/flip_flop_cat.gif" 
+				alt="Flip Flop Cat" 
+				class="img-responsive img-rounded" />
+
+		</div>
+		<div class="col-md-10">
+		  <h2 id="intro">Intro</h2>
+<p>So this is a brief cat facts postmortem. There's a bunch to talk about from a technical perspective.
+I had never used NodeJs before, and the extent of my js programming was browser side DOM manipulation and Ajax.  I had a few months of using Angular, but still, that's a different beast than server side authentication, ORM data integrity stuff, and other server side operations that a backend language deals with.</p>
+
+<p>My feelings are still mixed on the subject of NodeJs due to how difficult it is, from my perspective, to write clean, readable, maintainable, and robust javascript due to its lexical scoping, asynchronous single threaded nature, and lack of OOP.</p>
+
+<p>Disclaimer: I am not a Node guru, I have worked with Java, Ruby, Python, and PHP, and am just noticing the differences that all of these seem to have from JS. Additionally, I'm sure a guru can write amazing robust maintainable JS in no time, however, a guru of assembly could accomplish the same thing.  I'm just trying to discuss it from the perspective of an regular developer.</p>
+
+<h2 id="catfacts-architecture">Catfacts Architecture</h2>
+<p>I divided my app into a typical MVC pattern with a cron job running the actual sending of the catfacts based on a user set time interval.
+I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a raw Node script for the cron job.</p>
+
+<ul>
+  <li>
+    <h3 id="mongoose">Mongoose</h3>
+    <p>Mongoose was a bit of a beast after using Active Record for so long. Data Models are Object Oriented by nature, i.e., I can create a 'Person' Object which I can then extend to create a 'Catfacts_Person' Object. This seems intuitive and in active record it's a breeze to create models and extend models. I mean Active Record model creation is literally two lines of code:</p>
+
+    <pre><code>  class Person &lt; ApplicationRecord
+  end
+</code></pre>
+
+    <pre><code>  class CatFacts_Person &lt; Person
+  end
+</code></pre>
+
+    <p>And to find a person and change it's name:</p>
+
+    <pre><code>  dude = Person.find("Dude")
+  dude.first_name = "otherdude"
+  dude.save
+</code></pre>
+
+    <p>I have access to every column of that record in the database and I can assign and change attributes easily.</p>
+
+    <p>It seems impossible to be more elegant and simple than that.</p>
+
+    <p>Mongoose was not this elegant and simple. You have to  create a schema, then a model, then to extend it you have to create a discriminator…
+I'm not going to go into the details, but for a premier ORM, with one of the most starred and contributed packages on npm, it wasn't even close to the simplicity and ease of Active Record.</p>
+
+    <p>And I don't even blame the creators at all. Certainly, I think the ORM is the absolute best you can do within the confines of the Javascript language.</p>
+  </li>
+  <li>
+    <h3 id="express">Express</h3>
+
+    <p>I really enjoyed using Express. I was rocking and rolling with it shortly after reading up on it. The pipeline format is very elegant and intuitive and building your response with middleware is fun.</p>
+
+    <p>I tried to keep ALL data manipulation out of Express and inside of my ORM. I pretty much simply used Express for orchestrating connections between Mongoose and EJS with the occasional weed out of un-needed fields before sending a JSON object to the view.</p>
+
+    <p>The one esoteric but niggling issue I had with Express was: when to use the request vs response object. Obviously you're reading all your POST variables from the request object… but what if I want to assign some data to a variable that the views will be able to access?
+Do I assign that variable/data to request or response objects? I technically can use both!! The answer I came up with is that while both are usable, the recommended practice is to use the response object for everything…Apparently…. it's no longer a request once it enters the app…by the time it hits your app and middleware you're building the response.</p>
+
+    <p><a href="http://stackoverflow.com/questions/39987794/what-is-conceptual-best-practice-for-express-req-locals-vs-res-locals">Stack Overflow 1</a></p>
+
+    <p><a href="http://stackoverflow.com/questions/33451053/req-locals-vs-res-locals-vs-res-data-vs-req-data-vs-app-locals-in-express-mi?noredirect=1&amp;lq=1">Stack Overflow 2</a></p>
+  </li>
+  <li>
+    <h3 id="ejs">EJS</h3>
+    <p>This is basically a slightly <s>shittier</s> more streamlined ERB. I had to install another package called EJS-layouts to be able to use layouts and there was no built in syntax for conditionals or loops, so using raw JS gets bloated pretty fast. For <a href="https://github.com/nick-catfacts/catfact-express/blob/master/views/dashboard/_output_recipients.ejs#L5">example</a>.</p>
+
+    <p>There were a ton of other templating options which I'll look into one day, I just didn't want to get too involved with the templating engines.  Jade looked really neat. Super simple, elegant, html codez.  Basically what the Emmett plugin does for you except with an complimentary extra compilation step and Jade is possibly maybe more readable than HTML depending on who you ask?…</p>
+  </li>
+  <li>
+    <h3 id="cron-job">Cron Job</h3>
+    <p>This is the meat of the project. The app handles the user management but this script is what actually sends the messages.</p>
+
+    <p>In the main app, the user adds a catfacts 'recipient' to his account, and then sets an 'interval' on that recipient.  The interval is a time in minutes of how often that 'recipient' is supposed to receive a catfact text message. This cron job scripts takes a modulus of the interval with the current time and if that result equals zero…boom…a helpful, handy catfact is sent out.</p>
+
+    <p>I used <s>Twilio</s> Plivo to send the texts.</p>
+
+    <p>This was where I had a major struggle with the experience known as callback hell. I had to fetch all users, get one user from that collection, get that users recipients, get that recipients interval and modulus that with the current time, send a message, then adjust the users messages remaining to reflect a message sent. Most of these operations are asynchronous…..</p>
+
+    <p>Deeply nested asychronous calls are nasty. They look nasty, are hard to reason about, and are bloated as all get out. Promises are a solution and keep things more readable, however, Node and npm libraries seem to love the callback and then infinite copy/paste of error handling:</p>
+
+    <pre><code>  if(err){
+    console.log(err)
+    throw err;
+  } else {
+  //do fun stuff!
+  }
+</code></pre>
+  </li>
+  <li>
+    <h3 id="summary">Summary</h3>
+    <p>I think I'm spoiled from using Ruby and Rails as a web language. It's like that girl you date who's basically got it all figured out, she's got a good career, a nice house, a good family, she cooks healthy food and does yoga…buuuut you have to watch yourself around her. No overt alcholism, no nose picking. She gives you structure.</p>
+
+    <p>Javascript(and it's ecosystem) are different. The JS world is that girl the girl in the leather jacket rooting for you to drink a shot at some bar ya'll stopped at on your roadtrip to Mexico. She scratches her crotch with a fork.
+She has ALOT of quirks and is very dirty if you're not careful, but moves fast, there's not much you can't do with her, and she is down for going anywhere.</p>
+
+    <p>She can handle a database AND a three dimensional graphics library in the browser. She can do it Backend, Frontend, and, Mobile….
+She can handle heavy amount of users.
+Development can be fast…. You can do anything with her but you might painfully look back and regret what you did.</p>
+
+    <p>Also, at times she will start freaking out over the most trivial reasons…she will make things way more complicated than they have to be..and you will often question your sanity for dating her.</p>
+
+    <p>She can offer you alot…but you just have to deal with those rough edges…</p>
+  </li>
+  <li>
+    <h3 id="outro">Outro</h3>
+
+    <p>I guess the conclusion here is that Javascript is a mixture of pain and pleasure. I really enjoyed that I was able to build this app and I can translate those skills to both front end  and backend. That I'm able to pick up Three.js, or Babylon.js, or Websockets easily and can start developing browser games, better UI's, or backend CRUD.</p>
+
+    <p>I feel simultaneously that it's not optimal the code that JS forces you to write. Compared to other languages like Ruby, Go, or Python, Javascript, with their elegant syntax, JS is just much less readable, more bloated, and has a lot of unnecessary quirks.</p>
+
+    <p>Even Brendan Eich the creator of Javascript has apologized for it and said he created it in 10 days.</p>
+
+    <p>I think the only singular reason people voluntarily choose javascript over other languages is because of its browser monopoly. You have no choices browser side.</p>
+  </li>
+</ul>
+
+
+		</div>
+	</div>
+</div><!--/.container-fluid -->
+
+
+
+    </div>
+
+
+     <!-- other libs -->
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/vendor/baffle/dist/baffle.min.js"></script>
+
+    <!--My JS -->
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Riot  related scripts/tags -->
+    <script src="/assets/components/test-tag.js" type="riot/tag"></script>
+    <script src="/assets/components/baffle-tags.js" type="riot/tag"></script>
+
+    <script src="/assets/vendor/riot/riot+compiler.min.js"></script>
+
+    <!-- mount normally -->
+    <script>
+    riot.mount('*')
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+  </body>
+</html>

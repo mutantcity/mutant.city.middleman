@@ -97,15 +97,15 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
   I think I'm spoiled from using Ruby and Rails as a web language. It's like that girl you date who's basically got it all figured out, she's got a good career, a nice house, a good family, she cooks healthy food and does yoga...buuuut you have to watch yourself around her. No overt alcholism, no nose picking. She gives you structure.
 
   Javascript(and it's ecosystem) are different. The JS world is that girl the girl in the leather jacket rooting for you to drink a shot at some bar ya'll stopped at on your roadtrip to Mexico. She scratches her crotch with a fork.
-  She has ALOT of quirks and is very dirty if you're not careful, but moves fast, there's not much you can't do with her, and is down for going anywhere.
+  She has ALOT of quirks and is very dirty if you're not careful, but moves fast, there's not much you can't do with her, and she is down for going anywhere.
 
   She can handle a database AND a three dimensional graphics library in the browser. She can do it Backend, Frontend, and, Mobile....
   She can handle heavy amount of users.
   Development can be fast.... You can do anything with her but you might painfully look back and regret what you did.
 
-  Also, at times she will start freaking out over the most trivial reasons...will make things way more complicated than they have to be..and you will often question your sanity for dating her.
+  Also, at times she will start freaking out over the most trivial reasons...she will make things way more complicated than they have to be..and you will often question your sanity for dating her.
 
-  She can offer you alot...but you have to deal with those rough edges...
+  She can offer you alot...but you just have to deal with those rough edges...
 
 
 * ### Outro
