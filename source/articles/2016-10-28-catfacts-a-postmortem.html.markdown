@@ -44,12 +44,13 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
 
   I have access to every column of that record in the database and I can assign and change attributes easily.
 
-  It seems impossible to be more elegant and simple than that.
+  It seems impossible to be more elegant, simple, and readable than that.
 
-  Mongoose was not this elegant and simple. You have to  create a schema, then a model, then to extend it you have to create a discriminator...
-  I'm not going to go into the details, but for a premier ORM, with one of the most starred and contributed packages on npm, it wasn't even close to the simplicity and ease of Active Record.
+  Mongoose was not this elegant and simple. You have to create a schema, then a model, then to extend it, you have to create a discriminator...and all querys use callbacks.
 
-  And I don't even blame the creators at all. Certainly, I think the ORM is the absolute best you can do within the confines of the Javascript language.
+  I'm not going to go into the details, but for a premier ORM, with one of the most starred and contributed packages on npm, I didnt find it near the simplicity, readability, and ease of use as Active Record.
+
+  And I don't even blame the creators for extra cruft at all. Certainly, I think the ORM is the absolute best you can do within the confines of the Javascript language.
 
 * ### Express
 

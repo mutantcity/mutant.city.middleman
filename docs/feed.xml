@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/"/>
     <id>http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/</id>
     <published>2016-10-28T11:27:00-07:00</published>
-    <updated>2016-10-28T19:09:05-07:00</updated>
+    <updated>2016-10-28T19:12:48-07:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -52,12 +52,13 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
 
     &lt;p&gt;I have access to every column of that record in the database and I can assign and change attributes easily.&lt;/p&gt;
 
-    &lt;p&gt;It seems impossible to be more elegant and simple than that.&lt;/p&gt;
+    &lt;p&gt;It seems impossible to be more elegant, simple, and readable than that.&lt;/p&gt;
 
-    &lt;p&gt;Mongoose was not this elegant and simple. You have to  create a schema, then a model, then to extend it you have to create a discriminator…
-I'm not going to go into the details, but for a premier ORM, with one of the most starred and contributed packages on npm, it wasn't even close to the simplicity and ease of Active Record.&lt;/p&gt;
+    &lt;p&gt;Mongoose was not this elegant and simple. You have to create a schema, then a model, then to extend it, you have to create a discriminator…and all querys use callbacks.&lt;/p&gt;
 
-    &lt;p&gt;And I don't even blame the creators at all. Certainly, I think the ORM is the absolute best you can do within the confines of the Javascript language.&lt;/p&gt;
+    &lt;p&gt;I'm not going to go into the details, but for a premier ORM, with one of the most starred and contributed packages on npm, I didnt find it near the simplicity, readability, and ease of use as Active Record.&lt;/p&gt;
+
+    &lt;p&gt;And I don't even blame the creators for extra cruft at all. Certainly, I think the ORM is the absolute best you can do within the confines of the Javascript language.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h3 id="express"&gt;Express&lt;/h3&gt;
