@@ -4,7 +4,7 @@ I'm a software developer from New Orleans transplanted to Los Angeles.
 
 My professional interests are intuitive elegant code and UI's, and the intersection between the arts and technology.
 
-My personal interests are craft beer, running, guitar, cigars, basketball, delicious food, philosophy,  biotechnology, biking/surfing/camping/hiking, and so much more.
+My personal interests are craft beer, running, guitar, cigars, basketball, delicious food, philosophy,  biotechnology, biking/surfing/camping/hiking, and so much more than I have time for.
 
 [<img src="/assets/img/icons/github_icon.png" style="width:40px">](https://github.com/nkiermaier/)
 [<img src="/assets/img/icons/stack_overflow_icon.png" style="width:40px">](http://stackoverflow.com/users/1821450/nick-kiermaier)
