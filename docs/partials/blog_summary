@@ -1,18 +1,16 @@
     <aside>
       <h2>Recent Articles</h2>
       <ol>
-          <li><a href="/articles/2016/10/28/catfacts-a-postmortem/">Catfacts, A postmortem</a> <span>Oct 28</span></li>
           <li><a href="/articles/2016/09/22/hello-world/">Hello World</a> <span>Sep 22</span></li>
       </ol>
 
       <h2>Tags</h2>
       <ol>
-          <li><a href="/tags/tech/">tech (1)</a></li>
           <li><a href="/tags/first_entry/">first_entry (1)</a></li>
       </ol>
 
       <h2>By Year</h2>
       <ol>
-          <li><a href="/2016/">2016 (2)</a></li>
+          <li><a href="/2016/">2016 (1)</a></li>
       </ol>
     </aside>
