@@ -1,7 +1,4 @@
-### stuff I've gone and done
-
-* My Github
-  * [Github](https://github.com/nkiermaier)
+### Stuff I've gone n' done
 
 * A Catfacts site I wrote.
   * [https://www.catfacts.us](https://www.catfacts.us)
@@ -21,3 +18,6 @@
 
 * A bunch of starter templates I've written.  I try to make a quick opinionated startup when I learn a technology, to speed up future projects and iron out issues I had.
   *[Template repo](https://github.com/nick-templates)
+
+* My Github
+  * [Github](https://github.com/nkiermaier)
