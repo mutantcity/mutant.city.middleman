@@ -8,5 +8,5 @@ My personal  website.
 
 ###  Notes
 * This site is hosted on a non-root github pages repo, yet it has https! How you may ask?  The glory of cloudflare: [https://blog.keanulee.com/2014/10/11/setting-up-ssl-on-github-pages.html](https://blog.keanulee.com/2014/10/11/setting-up-ssl-on-github-pages.html)
-* It appears CF caches content from the host and serves the cached content over https.  Which is perfect because I'm not serving any dynamic content.
-* Downside is that there's a delay in updating which could inhibit development.  But I just turn off caching for dev.
+* It appears all request's go through the cloud flare network which then fetches you page for serving.
+* Downside is that there's a delay in updating which could inhibit development because of caching.  But I just turn off caching for dev.
