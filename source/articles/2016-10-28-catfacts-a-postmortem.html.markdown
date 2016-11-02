@@ -91,7 +91,7 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
   Shes really easy to get started with, but can get you in trouble real fast if you don't watch yourself. She moves fast, can do really cool things, and is down for going anywhere.
 Development can be fast and fun.... but you have to be careful of the rough patches!
 
-  (I hope that didn't come off as sexist. You could flip the word girl with guy and it would still apply well.) 
+  (I hope that didn't come off as sexist. You could flip the word girl with guy and it would still work.) 
 
 * ### Outro
 
