@@ -181,7 +181,7 @@ Do I assign that variable/data to request or response objects? I technically can
 
     <p>This was where I had a major struggle with the experience known as callback hell. I had to fetch all users, get one user from that collection, get that users recipients, get that recipients interval and modulus that with the current time, send a message, then adjust the users messages remaining to reflect a message sent. Most of these operations are asynchronous…..</p>
 
-    <p>Deeply nested asychronous calls are nasty. They look nasty, are hard to reason about, and are bloated as all get out. Promises keep things more readable but really aren't a solution for the fact that JS is a single threaded language and these calls are baked in. Unlike Ruby or Php where</p>
+    <p>Deeply nested asychronous calls are nasty. They look nasty, are hard to reason about, and are bloated as all get out. Promises keep things more readable but really aren't a solution for the fact that JS has a single threaded asyschronous concurrency model and these calls are baked in. The model theoretically is beautiful and is somewhat how a CPU works, and my maybe my distaste is just in how it's implemented by Javascript.</p>
   </li>
   <li>
     <h3 id="summary">Summary</h3>
