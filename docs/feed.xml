@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/"/>
     <id>http://blog.url.com/articles/2016/10/28/catfacts-a-postmortem/</id>
     <published>2016-10-28T11:27:00-07:00</published>
-    <updated>2016-11-02T12:34:45-07:00</updated>
+    <updated>2016-11-02T12:37:56-07:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -24,7 +24,7 @@ I had never used NodeJs before, and the extent of my js programming was browser 
 
 &lt;p&gt;My feelings are still mixed on the subject of NodeJs due to how difficult it is, from my perspective, to write clean, readable, maintainable, and robust javascript due to its lexical scoping, asynchronous single threaded nature, and lack of OOP.&lt;/p&gt;
 
-&lt;p&gt;Disclaimer: I am not a Node guru, I have worked with Java, Ruby, Python, and PHP, and am just noticing the differences that all of these seem to have from JS. Additionally, I'm sure a guru can write amazing robust maintainable JS in no time, however, a guru of assembly could accomplish the same thing.  I'm just trying to discuss it from the perspective of average developers with deadlines.&lt;/p&gt;
+&lt;p&gt;Disclaimer: I am not a Node guru, I have worked with Java, Ruby, Python, and PHP, and am just noticing the differences that all of these seem to have from JS. Additionally, I'm sure a guru can write amazing robust maintainable JS in no time, however, a guru of assembly could accomplish the same thing.  I'm just trying to discuss it from the perspective of a proficient developer getting started with non-framework, plain old javascript app development.&lt;/p&gt;
 
 &lt;h2 id="catfacts-architecture"&gt;Catfacts Architecture&lt;/h2&gt;
 &lt;p&gt;I divided my app into a typical MVC pattern with a cron job running the actual sending of the catfacts based on a user set time interval.
