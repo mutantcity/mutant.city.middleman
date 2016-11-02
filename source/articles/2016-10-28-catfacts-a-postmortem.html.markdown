@@ -101,7 +101,7 @@ Development can be fast and fun.... but you have to be careful of the rough patc
 
   Even Brendan Eich the creator of Javascript said he created it in 10 days and is working on Web Assembly to allow a lower level compilation target to build new languages. In his defense: the web was such a baby then..who knew? The original netscape specifications just needed a language to make fonts blink and Geocities websites sparkle.
 
-  With web assembly in the pipeline to allow a binary compilation target and near native OS speeds, I think this will transcend the browser to something beyond JUST web apps and web sites. What that is remains to  be seen...but I for one, can't wait.
+  With web assembly in the pipeline to allow a binary compilation target and near native OS speeds, I think this will allow new languange competition in the browser, new ways of using the browser, and transcend the browser to something beyond JUST web apps and web sites. What that is remains to  be seen...but I for one, can't wait.
 
 
 
