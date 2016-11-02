@@ -81,41 +81,27 @@ I used Mongoose for the 'M', EJS for the 'V', and Express for the 'C' and just a
 
   This was where I had a major struggle with the experience known as callback hell. I had to fetch all users, get one user from that collection, get that users recipients, get that recipients interval and modulus that with the current time, send a message, then adjust the users messages remaining to reflect a message sent. Most of these operations are asynchronous.....
 
-  Deeply nested asychronous calls are nasty. They look nasty, are hard to reason about, and are bloated as all get out. Promises are a solution and keep things more readable, however, Node and npm libraries seem to love the callback and then infinite copy/paste of error handling:
-
-  ~~~~
-    if(err){
-      console.log(err)
-      throw err;
-    } else {
-    //do fun stuff!
-    }
-  ~~~~
-
+  Deeply nested asychronous calls are nasty. They look nasty, are hard to reason about, and are bloated as all get out. Promises keep things more readable but really aren't a solution for the fact that JS is a single threaded language and these calls are baked in. Unlike Ruby or Php where 
 
 
 * ### Summary
-  I think I'm spoiled from using Ruby and Rails as a web language. It's like that girl you date who's basically got it all figured out, she's got a good career, a nice house, a good family, she cooks healthy food and does yoga...buuuut you have to watch yourself around her. No overt alcholism, no nose picking. She gives you structure.
+  I think I'm spoiled from using Ruby and Rails as a web language. It's like that girl you date who's basically got it all figured out, she's got a good career, a nice house, a good family, she cooks healthy food and does yoga. It's like she's perfectly made for you...buuuut you have to watch yourself around her. No overt alcholism, no nose picking. She gives you structure.
 
   Javascript(and it's ecosystem) are different. The JS world is the girl in the leather jacket rooting for you to drink a shot at a badass bar ya'll stopped at on your roadtrip to Mexico.
-  Shes really easy to get started with, has ALOT of quirks and can get you in trouble if you're not careful. She also moves fast, can do really cool things, and is down for going anywhere.
+  Shes really easy to get started with, but can get you in trouble real fast if you don't watch yourself. She moves fast, can do really cool things, and is down for going anywhere.
+Development can be fast and fun.... but you have to be careful of the rough patches!
 
-  She can handle a database AND a three dimensional graphics library in the browser. She works in Backend, Frontend, Mobile, Unity....
-  Development can be fast and fun.... but you have to be careful of the rough patches!
-
-  (I hope that didn't come off as sexist. You could easily flip the word girl with guy and it would still apply well I think.) 
+  (I hope that didn't come off as sexist. You could flip the word girl with guy and it would still apply well.) 
 
 * ### Outro
 
-  I guess the conclusion here is that Javascript is a mixture of pain and pleasure. I really enjoyed that I was able to build this app and I can translate those skills to both front end  and backend. That I'm able to pick up Three.js, or Babylon.js, or Websockets easily and can start developing browser games, better UI's, or backend CRUD.
+  I guess the conclusion here is that Javascript is a mixture of pain and pleasure. I really enjoyed that I was able to build this app and I can translate those skills to both front end and backend. There's features of JS I like, such as first class functions, the prototype system, and fast and loose object definitions.  However, I'm not really enjoying the concurrency model of Node or the scoping of Javascript and dont feel that it's optimal the code that JS forces you to write. Compared to other languages like Ruby, Python, or Go, I feel JS is less readable, has more bloat, is harder to  reason about, and has a lot of unnecessary quirks to deal with...all without offering more compelling language features.
 
-  I feel simultaneously that it's not optimal the code that JS forces you to write. Compared to other languages like Ruby, Go, or Python, Javascript, with their elegant syntax, JS doesn't offer better features and is less readable, more bloated, and has a lot of unnecessary quirks.
+  I think the singular reason people have historically chosen javascript over other languages is because of its browser monopoly. You have no other choices browser side and devs are just adapting by bringing it server side.
 
-  I think the only singular reason people voluntarily choose javascript over other languages is because of its browser monopoly. You have no choices browser side.
+  Even Brendan Eich the creator of Javascript said he created it in 10 days and is working on Web Assembly to allow a lower level compilation target to build new languages. In his defense: the web was such a baby then..who knew? The original netscape specifications just needed a language to make fonts blink and Geocities websites sparkle.
 
-  Even Brendan Eich the creator of Javascript has apologized for it and said he created it in 10 days. In his defense: who knew?  He is also working on Web Assembly to replace it.
-
-  With web assembly in the pipeline to allow a binary compilation target and near native OS speeds, I think this will transcend the browser to something beyond JUST web apps and web sites. What that is remains to  be seen...but as they say: "I for one, can't wait."
+  With web assembly in the pipeline to allow a binary compilation target and near native OS speeds, I think this will transcend the browser to something beyond JUST web apps and web sites. What that is remains to  be seen...but I for one, can't wait.
 
 
 
