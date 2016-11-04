@@ -1,4 +1,3 @@
-### Stuff I've gone n' done
 
 * A Catfacts site I wrote.
   * [https://www.catfacts.us](https://www.catfacts.us)
