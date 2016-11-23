@@ -67,7 +67,7 @@
 			function loadImage() {
 				canvas = document.getElementById("particleCanvas");
 				canvas.width = 1300;
-				canvas.height = 300;
+				canvas.height = 800;
 
 				//alert(canvas.width + " " + canvas.height)
 				//html5 stuff
