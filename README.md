@@ -1,5 +1,5 @@
 # mutant.city
-My personal  website.
+This is my old personal site before being ported to Wordpress. It is no longer functional.
 
 * Site is build with [middleman](https://middlemanapp.com/) ruby static site generator to handle the content and to generally make html more extensible.
 * The javascript title bar is handled with [riot.js](http://riotjs.com/) web components and really neat micro-lib called [baffle.js](https://camwiegert.github.io/baffle/).
